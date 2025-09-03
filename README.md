@@ -1,6 +1,6 @@
 # ncmp
 
-ncmp(NetEase Cloud Music Partner/网易云音乐合伙人)
+ncmp(NetEase Cloud Music Partner/网易云音)
 
 基于 Python 的网易云音乐-音乐合伙人任务脚本，支持本地运行和 GitHub Actions 自动执行。
 
