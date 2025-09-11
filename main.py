@@ -38,7 +38,13 @@ def main():
         # 处理执行结果
         end_message = "✅ 执行成功" if success else "❌ 执行失败"
         logger.end(end_message, not success)
-        
+
+        if success:
+            notifier.send_notification(
+                "网易云音乐合伙人 - 执行成功通知",
+                f"程序执行完成，结果: {end_message}"
+            )
+
         if not success:
             notifier.send_notification(
                 "网易云音乐合伙人 - 执行失败提醒",
